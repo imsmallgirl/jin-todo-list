@@ -1,24 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import React, {useEffect, useState} from 'react'
+import styled from 'styled-components'
+import InputBox from './InputBox';
+import TodoItemList from './ToDoItemList';
+
+export const Container = styled.div`
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+`
 
 function App() {
+  const [todoList , setTodoList ] = useState([]);
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Container>
+        <InputBox todoList={todoList} setTodoList={setTodoList}></InputBox>
+        {/* 할일 리스트 */}
+        <TodoItemList title={'할 일'} todoList={todoList} setTodoList={setTodoList} checkedList={false}/>
+        {/* 완료된 리스트 */}
+        <TodoItemList title={'완료한 항목'} todoList={todoList} setTodoList={setTodoList} checkedList={true} />
+      </Container>
   );
 }
 
