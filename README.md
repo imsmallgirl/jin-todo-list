@@ -1,7 +1,7 @@
 ![header](https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=300&section=header&text=[React]%todo-list&fontSize=90)
 
 ## :information_desk_person:&nbsp;  Demo Site
-* [imsmallgirl.github.io/React-todo-list/](imsmallgirl.github.io/React-todo-list/)
+* [https://imsmallgirl.github.io/jin-todo-list/](https://imsmallgirl.github.io/jin-todo-list/)
 
 ### :books:&nbsp; 사용 언어
 <!-- 주석 -->
